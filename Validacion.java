@@ -9,7 +9,7 @@ public class Validacion {
                 new Rational(3, 4),
                 new Rational(7, 8));
         //Imperativo
-        var unMedio = new Rational(1, 2);
+        var unMedio = new Rational(1, 2);//se da los valores racionales para comparar
         //for(Rational r : rationals){
          //   if(r.isLessThan(unMedio)){
          //       System.out.println(r);
@@ -18,7 +18,7 @@ public class Validacion {
         System.out.println(" FRACCIONES MAYORES A 1/2 ");
         rationals.stream()
                 .filter(r -> r.isLessThan(new Rational(1, 2))).
-                forEach(System.out::println);//hace una comparativa con todas las fracciones
+                forEach(System.out::println);
         //--------------------------------------------------------------------------------
 
         System.out.println("SUMA FRACCIONES");
